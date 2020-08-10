@@ -1,0 +1,106 @@
+:root {
+    --headerFont:'Inconsolata', monospace;
+    --copyFont: 'EB Garamond', serif;
+    --almostBlack: #083940;
+    --darkGreen: #0E626D;
+}
+
+html {
+  height: 100%;
+}
+
+    body {
+    overflow: scroll;
+}
+
+nav {
+    width: 83%;
+    float: right;
+}
+
+.nav-link {
+    color: var(--darkGreen);
+    font-family: var(--headerFont);
+}
+
+/* article {
+    height: 80vh;
+} */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--headerFont);
+    font-weight: 700;
+    color: var(--darkGreen);
+}
+
+.copy {
+    width: 80vw;
+    font-family: var(--copyFont);
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: justify;
+    color: var(--almostBlack);
+    line-height: calc(1ex / 0.32);
+    
+}
+
+.about {
+    max-width: 80vw;
+    font-family: var(--copyFont);
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: justify;
+    color: var(--almostBlack);
+    line-height: calc(1ex / 0.32);
+}
+
+.portfolioCard {
+    width: 90%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.contact {
+    width: 60%;
+    display: inline-block;
+    margin: 0 auto;
+    border: solid 2px black;
+    padding: 2rem;
+}
+
+form label {
+    font-family: var(--headerFont);
+    color: var(--darkGreen);
+}
+
+
+i{
+    color: var(--almostBlack);
+}
+
+footer {
+    position: fixed;
+    width: 100vw;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+footer p {
+    color: var(--darkGreen);
+    font-family: var(--headerFont);
+}
+
+
+@media (min-width:760px) {
+
+    .copy {
+        width: 60ch;
+    max-width: 60%;
+    }
+}
